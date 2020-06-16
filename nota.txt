@@ -1,0 +1,13 @@
+crear variable para correr el proyecto
+
+export ENV_FILE_LOCATION=./.env
+export FLASK_APP=app.py
+export FLASK_ENV=development
+export FLASK_DEBUG=1
+
+para Probar los errores personalizados se necesita desactivar el debug mode
+
+export FLASK_DEBUG=0
+
+
+echo ENV_FILE_LOCATION FLASK_APP FLASK_ENV FLASK_DEBUG
