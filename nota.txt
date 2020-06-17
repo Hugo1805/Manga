@@ -9,5 +9,4 @@ para Probar los errores personalizados se necesita desactivar el debug mode
 
 export FLASK_DEBUG=0
 
-
 echo ENV_FILE_LOCATION FLASK_APP FLASK_ENV FLASK_DEBUG
