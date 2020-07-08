@@ -1,4 +1,4 @@
-crear variable para correr el proyecto
+crear variable de entorno para correr el proyecto
 
 export ENV_FILE_LOCATION=./.env
 export FLASK_APP=app.py
@@ -7,6 +7,15 @@ export FLASK_DEBUG=1
 
 para Probar los errores personalizados se necesita desactivar el debug mode
 
+export ENV_FILE_LOCATION=./.env
+export FLASK_APP=app.py
+export FLASK_ENV=development
 export FLASK_DEBUG=0
 
 echo ENV_FILE_LOCATION FLASK_APP FLASK_ENV FLASK_DEBUG
+
+para recibir los mail de manera local 
+
+abrir una terminal nueva en el env del proyacto y ejecutar la siguiente linea
+
+python -m smtpd -n -c DebuggingServer localhost:1025

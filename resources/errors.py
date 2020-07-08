@@ -22,6 +22,12 @@ class EmailAlreadyExistsError(Exception):
 class UnauthorizedError(Exception):
     pass
 
+class EmailDoesnotExistsError(Exception):
+    pass
+
+class BadtokenError(Exception):
+    pass
+
 errors = {
     "InternalServerError":{
         "message":  "Something went worng",
@@ -54,5 +60,13 @@ errors = {
     "UnauthorizedError":{
         "message": "Invalid username or password",
         "status": 401
+    },
+    "EmailDoesnotExistsError":{
+        "message": "Could't find the user with given email address",
+        "status": 400
+    },
+    "BadTokenError":{
+        "message": "Invalid Token",
+        "status": 403 
     }
 }

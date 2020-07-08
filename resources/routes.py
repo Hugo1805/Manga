@@ -1,5 +1,6 @@
 from .manga import MangaApi, MangasApi
 from .auth import SignupApi, LoginApi
+from  .reset_password import ForgotPassword, RestPassword
 
 def initialize_routes(api):
 
@@ -12,5 +13,11 @@ def initialize_routes(api):
 
     api.add_resource(SignupApi, '/api/v1/signup')
     api.add_resource(LoginApi, '/api/v1/login')
+
+    #MAIL
+    
+    api.add_resource(ForgotPassword, '/api/v1/forgot')
+    api.add_resource(RestPassword, '/api/v1/reset')
+
 
 
