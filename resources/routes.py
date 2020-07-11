@@ -11,8 +11,8 @@ def initialize_routes(api):
 
     #AUTH
 
-    api.add_resource(SignupApi, '/api/v1/signup')
-    api.add_resource(LoginApi, '/api/v1/login')
+    api.add_resource(SignupApi, '/api/v1/auth/signup')
+    api.add_resource(LoginApi, '/api/v1/auth/login')
 
     #MAIL
     

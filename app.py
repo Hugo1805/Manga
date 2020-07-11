@@ -40,11 +40,6 @@ jwt = JWTManager(app)
 
 
 #Database
-
-app.config['MONGODB_SETTINGS'] = {
-    'host':'mongodb://localhost/manga'
-}
-
 initialize_db(app)
 
 #Restfull routes
