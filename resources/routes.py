@@ -1,6 +1,6 @@
-from .manga import MangaApi, MangasApi
-from .auth import SignupApi, LoginApi
-from  .reset_password import ForgotPassword, RestPassword
+from manga import MangaApi, MangasApi
+from auth import SignupApi, LoginApi
+from reset_password import ForgotPassword, RestPassword
 
 def initialize_routes(api):
 
