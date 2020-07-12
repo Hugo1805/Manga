@@ -6,7 +6,7 @@ class TestCreateManga(BaseCase):
 
     def test_create_manga_successful(self):
         # Given
-        email = "test03@gmail.com"
+        email = "test4@gmail.com"
         password = "mycoolpassword"
         payload = json.dumps({
             "email" : email,
@@ -26,7 +26,7 @@ class TestCreateManga(BaseCase):
 
         response = self.app.post('/api/v1/mangas', 
         headers={"Content-Type": "application/json","Authorization":f"Bearer {login_token}"},
-        data =json.dumps(manga_payload))
+        data=json.dumps(manga_payload))
 
         # Then
 
